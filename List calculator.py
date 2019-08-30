@@ -18,7 +18,7 @@ rn = 10 #rounding
 while True:
     try:
         print("\n__________OPTIONS___________ \n"
-            "\nInput '+' to add the numbers\n"
+            "\nInput '+' to sum the numbers\n"
             "Input '-' to substract the numbers\n"
             "Input '*' or 'x' to multiply the numbers\n"
             "Input '/' to divide the numbers\n"
@@ -36,6 +36,7 @@ while True:
         a = str(input("\nChoose an option: ")).lower()
         n = 1
         y = []
+        t1 = []
         y1 = 0
         y2 = 0
         #np.seterr(divide='ignore')
@@ -340,18 +341,21 @@ while True:
 
             v = float(input('Enter the exponent: '))
             print('\nExponent:--->', v)
-
+         
             def m1():
                 for x in y:
                     y1 = x**v
-                    yield round(y1, rn)
+                    yield str(round(y1, rn))
+            
+            for y1 in m1():
+                t1.append(y1)
 
             u1 = 'Exponentiation result: '
             print()
-            print('^' * (len(u1) + len(max((str(x**v) for x in y), key=len)) + 1), '\n')
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
-            print('^' * (len(u1) + len(max((str(x**v) for x in y), key=len)) + 1))
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
             file = open('last_calculator_result.txt', "w")
             file.write('^')
@@ -641,7 +645,7 @@ while True:
             print(q)
             print('?' * (len(q)))
 
-            sleep(1)
+            sleep(0.75)
 
     finally:
         log.close()
@@ -652,6 +656,6 @@ while True:
 #dates in python log
 #what was calculating in logs
 #modules and decorators
-#rounding to 0 and ** y/x x/y roundings (output symbols)
+#rounding to 0 and y/x x/y roundings (output symbols, watch for **)
 #lambdas
 #random func
