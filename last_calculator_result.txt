@@ -1,0 +1,14 @@
+//
+
+Last y/x result: 
+0.5
+
+//
+
+
+%
+
+Last y/x % result: 
+50.0 %
+
+%
