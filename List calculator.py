@@ -13,7 +13,7 @@ print('\nFirstly choose an option\n'
     'Note that you can input any amount of numbers\n')
 
 log = open('calculator_log.txt', 'w')
-rn = 10 #rounding
+rn = 15 #rounding
 
 while True:
     try:
@@ -49,9 +49,9 @@ while True:
 
         elif a == 'round' or a == 'rounding' or a == 'r':
             print("\nYou can set the rounding number for the results\n"
-                "0 will round results to the integer,\n" 
+                "0 will round results to the integer,\n"
                 "1 - to the first number after integer, e.t.c.\n"
-                "10 is by default\n")
+                "15 is by default\n")
             print('Active rounding number is', rn, '\n' )            
             rn = int(input('Enter the rounding number: '))
             print("New rounding number is set to ", rn, '\n')
@@ -407,14 +407,17 @@ while True:
             def m1():
                 for x in y:
                     y1 = z/x
-                    yield round(y1, rn)
+                    yield str(round(y1, rn))
+
+            for y1 in m1():
+                t1.append(y1)
           
             u1 = 'y/x result: '
             print()
-            print('/' * (len(u1) + len(max((str(z/x) for x in y), key=len)) + 1), '\n')
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
-            print('/' * (len(u1) + len(max((str(z/x) for x in y), key=len)) + 1))
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
             file = open('last_calculator_result.txt', "w")
             file.write('//')
@@ -438,15 +441,15 @@ while True:
 
             def m2():
                 for y1 in m1():
-                    y2 = y1*100
-                    yield str(round(y2, rn)) + ' %'
+                    y2 = str(float(y1)*100) + ' %'
+                    yield y2
 
             u2 ='y/x % result: '
             print()
-            print('%' * (len(u2) + len(max((str(y1*100) for y1 in m1()), key=len)) +3), '\n')
+            print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3), '\n')
             for y2 in m2():
                 print(u2, y2, '\n')
-            print('%' * (len(u2) + len(max((str(y1*100) for y1 in m1()), key=len)) +3))
+            print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3))
 
             file.write('\n\n\n%')
             file.write('\n\nLast ')
@@ -498,14 +501,17 @@ while True:
             def m1():
                 for x in y:
                     y1 = x/z
-                    yield round(y1, rn)
+                    yield str(round(y1, rn))
            
+            for y1 in m1():
+                t1.append(y1)
+
             u1 = 'x/y result: '
             print()
-            print('/' * (len(u1) + len(max((str(x/z) for x in y), key=len)) + 1), '\n')
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
-            print('/' * (len(u1) + len(max((str(x/z) for x in y), key=len)) + 1))
+            print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
             file = open('last_calculator_result.txt', "w")
             file.write('//')
@@ -529,15 +535,15 @@ while True:
 
             def m2():
                 for y1 in m1():
-                    y2 = y1*100
-                    yield str(round(y2, rn)) + ' %'
+                    y2 = str(float(y1)*100) + ' %'
+                    yield y2
 
             u2 ='x/y % result: '
             print()
-            print('%' * (len(u2) + len(max((str(y1*100) for y1 in m1()), key=len)) +3), '\n')
+            print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3), '\n')
             for y2 in m2():
                 print(u2, y2, '\n')
-            print('%' * (len(u2) + len(max((str(y1*100) for y1 in m1()), key=len)) +3))
+            print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3))
 
             file.write('\n\n\n%')
             file.write('\n\nLast ')
