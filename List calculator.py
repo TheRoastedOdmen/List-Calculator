@@ -1,5 +1,6 @@
 from time import sleep
 from math import factorial
+from random import randint
 #import numpy
 
 u = '\nL I S T   C A L C U L A T O R\n'
@@ -29,7 +30,8 @@ while True:
             "Input '!' to factorial the numbers\n"
         #    "Input 'openlast' to see the last result\n"
             "Input 'ol' or 'openlog' to see the log of the session\n"
-            "Input 'r' or 'round' to set the rounding number of the results\n"
+            "Input 'round' to set the rounding number of the results\n"
+            "Input 'random' to get a random number from the set range\n"
             "\nInput 'exit' to quit the program")
 
         log = open('Calculator_log.txt', 'a')
@@ -49,14 +51,14 @@ while True:
 
 #Rounding module
 
-        elif a == 'round' or a == 'rounding' or a == 'r':
-            print("\nYou can set the rounding number for the results\n"
+        elif a in ('round', 'rounding'):
+            print("\nYou can set the rounding number for the results\n\n"
                 "0 will round results to the integer,\n"
                 "1 - to the first number after integer, e.t.c.\n"
                 "15 is by default\n")
             print('Active rounding number is', rn, '\n' )            
             rn = int(input('Enter the rounding number: '))
-            print("New rounding number is set to ", rn, '\n')
+            print("New rounding number is set to ", rn)
 
             log.write('\n')
             log.write('The rounding number is set to ')
@@ -166,7 +168,7 @@ while True:
 
 #Multiplication module
 
-        elif a == '*' or a == 'x':
+        elif a in ('*', 'x'):
             print('\nYou have choosen the Multiplication\n')
             x = float(input('Enter the number: '))
             print(str(n) + 'st number:-->',x)
@@ -271,7 +273,7 @@ while True:
 
 #Average number Module
 
-        elif a == 'average' or a == 'a':
+        elif a in('a', 'average'):
             print("\nYou have choosen the Average number\n")
             x = float(input('Enter the number: '))
             print(str(n) + 'st number:--->',x)
@@ -320,7 +322,7 @@ while True:
 
 #Exponentiation module
 
-        elif a == '**' or a == '^':
+        elif a in ('**', '^'):
             print('\nYou have choosen the Exponentiation\n')
             x = float(input('Enter the number: '))
             print(str(n) + 'st number:-->',x)
@@ -570,7 +572,7 @@ while True:
 
 #Factorial module
 
-        elif a == '!':
+        elif a in ('!', 'factorial'):
             print('\nYou have choosen the Factorial\n')
             x = int(input('Enter the number: '))
             print(str(n) + 'st number:-->',x)
@@ -626,7 +628,8 @@ while True:
 
             sleep(1)
 
-
+#Random number module
+        #elif a in ('rand', 'random'):
 #Log modules
 
         elif a == 'openlast':
@@ -637,7 +640,7 @@ while True:
 
             sleep(1)
 
-        elif a == 'openlog' or a == 'ol':
+        elif a in ('openlog', 'ol'):
             print('\nPrinting the last session of the calculator log: ')
             sleep(0.5)
             log = open('Calculator_log.txt', 'r')

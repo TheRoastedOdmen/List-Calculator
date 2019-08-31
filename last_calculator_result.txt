@@ -1,16 +1,4 @@
-//
+x
 
-Last x/y result: 
-0.333333333333333
-0.666666666666667
-
-//
-
-
-%
-
-Last x/y % result: 
-33.3333333333333 %
-66.6666666666667 %
-
-%
+Last Multiplication result: 1.54
+x
