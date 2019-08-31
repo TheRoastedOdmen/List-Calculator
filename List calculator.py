@@ -33,7 +33,9 @@ while True:
             "\nInput 'exit' to quit the program")
 
         log = open('Calculator_log.txt', 'a')
+
         a = str(input("\nChoose an option: ")).lower()
+
         n = 1
         y = []
         t1 = []
@@ -662,6 +664,5 @@ while True:
 #dates in python log
 #what was calculating in logs
 #modules and decorators
-#rounding to 0 and y/x x/y roundings (output symbols, watch for **)
 #lambdas
 #random func
