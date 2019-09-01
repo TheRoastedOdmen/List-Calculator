@@ -1,4 +1,6 @@
-x
+r
 
-Last Multiplication result: 1.54
-x
+Last random number 
+1
+
+r

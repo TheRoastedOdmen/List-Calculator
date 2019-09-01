@@ -99,13 +99,13 @@ while True:
             print(u1, y1, '\n')
             print('+' * (len(u1) + len(y1) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('+')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write(y1)
-            file.write('\n+')
-            file.close()
+            last = open('last_calculator_result.txt', "w")
+            last.write('+')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write(y1)
+            last.write('\n+')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -150,13 +150,13 @@ while True:
             print(u1, m1(), '\n')
             print('-' * (len(u1) + len(str(m1())) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('-')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write(str(m1()))
-            file.write('\n-')
-            file.close()
+            last = open('last_calculator_result.txt', "w")
+            last.write('-')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write(str(m1()))
+            last.write('\n-')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -201,13 +201,13 @@ while True:
             print(u1, m1(), '\n')
             print('x' * (len(u1) + len(str(m1())) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('x')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write(str(m1()))
-            file.write('\nx')
-            file.close()
+            last = open('last_calculator_result.txt', "w")
+            last.write('x')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write(str(m1()))
+            last.write('\nx')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -254,13 +254,13 @@ while True:
             print(u1, m1(), '\n')
             print('/' * (len(u1) + len(str(m1())) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('/')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write(str(m1()))
-            file.write('\n/')
-            file.close()
+            last = open('last_calculator_result.txt', "w")
+            last.write('/')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write(str(m1()))
+            last.write('\n/')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -302,13 +302,13 @@ while True:
             print(u1, y1, '\n')
             print('=' * (len(u1) + len(y1) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('=')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write(y1)
-            file.write('\n=')
-            file.close()
+            last = open('last_calculator_result.txt', "w")
+            last.write('=')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write(y1)
+            last.write('\n=')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -361,16 +361,16 @@ while True:
                 print(u1, y1, '\n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('^')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write('\n')
+            last = open('last_calculator_result.txt', "w")
+            last.write('^')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write('\n')
             for y1 in m1():
-                file.write(str(y1))
-                file.write('\n')
-            file.write('\n^')
-            file.close()
+                last.write(str(y1))
+                last.write('\n')
+            last.write('\n^')
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -423,15 +423,15 @@ while True:
                 print(u1, y1, '\n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('//')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write('\n')
+            last = open('last_calculator_result.txt', "w")
+            last.write('//')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write('\n')
             for y1 in m1():
-                file.write(str(y1))
-                file.write('\n')
-            file.write('\n//')
+                last.write(str(y1))
+                last.write('\n')
+            last.write('\n//')
 
             log.write('\n')
             log.write(u1)
@@ -455,15 +455,15 @@ while True:
                 print(u2, y2, '\n')
             print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3))
 
-            file.write('\n\n\n%')
-            file.write('\n\nLast ')
-            file.write(u2)
-            file.write('\n')
+            last.write('\n\n\n%')
+            last.write('\n\nLast ')
+            last.write(u2)
+            last.write('\n')
             for y2 in m2():
-                file.write(str(y2))
-                file.write('\n')
-            file.write('\n%')
-            file.close()
+                last.write(str(y2))
+                last.write('\n')
+            last.write('\n%')
+            last.close()
 
             log.write('\n')
             log.write(u2)
@@ -517,15 +517,15 @@ while True:
                 print(u1, y1, '\n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('//')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write('\n')
+            last = open('last_calculator_result.txt', "w")
+            last.write('//')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write('\n')
             for y1 in m1():
-                file.write(str(y1))
-                file.write('\n')
-            file.write('\n//')
+                last.write(str(y1))
+                last.write('\n')
+            last.write('\n//')
 
             log.write('\n')
             log.write(u1)
@@ -549,15 +549,15 @@ while True:
                 print(u2, y2, '\n')
             print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3))
 
-            file.write('\n\n\n%')
-            file.write('\n\nLast ')
-            file.write(u2)
-            file.write('\n')
+            last.write('\n\n\n%')
+            last.write('\n\nLast ')
+            last.write(u2)
+            last.write('\n')
             for y2 in m2():
-                file.write(str(y2))
-                file.write('\n')
-            file.write('\n%')
-            file.close()
+                last.write(str(y2))
+                last.write('\n')
+            last.write('\n%')
+            last.close()
 
             log.write('\n')
             log.write(u2)
@@ -607,16 +607,16 @@ while True:
                 print(u1, y1, '\n')
             print('!' * (len(u1) + len(max((str(factorial(x)) for x in y), key=len)) + 1))
 
-            file = open('last_calculator_result.txt', "w")
-            file.write('!')
-            file.write('\n\nLast ')
-            file.write(u1)
-            file.write('\n')
+            last = open('last_calculator_result.txt', "w")
+            last.write('!')
+            last.write('\n\nLast ')
+            last.write(u1)
+            last.write('\n')
             for y1 in m1():
-                file.write(str(y1))
-                file.write('\n')
-            file.write('\n!')    
-            file.close()
+                last.write(str(y1))
+                last.write('\n')
+            last.write('\n!')    
+            last.close()
 
             log.write('\n')
             log.write(u1)
@@ -629,14 +629,39 @@ while True:
             sleep(1)
 
 #Random number module
-        #elif a in ('rand', 'random'):
+        elif a in ('rand', 'random'):
+            print('\nYou have choosen the random number\n')
+            x = int(input('From: '))
+            y1 = int(input('To: '))
+            if x > y1:
+                y2 = randint(y1, x)
+            else:
+                y2 = randint(x, y1)
+            print('\nRandom number from', x, 'to', y1, ': ', y2, '\n')
+
+            last = open('last_calculator_result.txt', "w")
+            last.write('r')
+            last.write('\n\nLast random number \n')
+            last.write(str(y2))
+            last.write('\n')
+            last.write('\nr')
+            last.close()
+
+            log.write('\nRandom number\n')
+            #from
+            #to
+            log.write(str(y2))
+            log.write('\n')
+
+            sleep(1)
+
 #Log modules
 
         elif a == 'openlast':
             print('\nPrinting the last result: ', '\n')
-            file = open('last_calculator_result.txt', 'r')
-            print(file.read())
-            file.close()
+            last = open('last_calculator_result.txt', 'r')
+            print(last.read())
+            last.close()
 
             sleep(1)
 
@@ -648,6 +673,7 @@ while True:
 
             sleep(1)
 
+#Unknown input
 
         else:
             q = 'Unknown input'
@@ -663,7 +689,7 @@ while True:
 
 #TODO:
 #division by zero
-#unknown inputs in x
+#unknown inputs in x,v e.t.c.
 #dates in python log
 #what was calculating in logs
 #modules and decorators
