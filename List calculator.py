@@ -648,8 +648,11 @@ while True:
             last.close()
 
             log.write('\nRandom number\n')
-            #from
-            #to
+            log.write('From ')
+            log.write(str(x))
+            log.write(' To ')
+            log.write(str(y1))
+            log.write(': ')
             log.write(str(y2))
             log.write('\n')
 
