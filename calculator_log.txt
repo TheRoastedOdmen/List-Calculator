@@ -1,3 +1,2 @@
 
-Random number
-From 0 To 50: 29
+Addition result: 4.0 + 5.0 + 6.0 + 7.0 = 22.0

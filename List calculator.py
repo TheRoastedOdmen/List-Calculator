@@ -109,6 +109,11 @@ while True:
 
             log.write('\n')
             log.write(u1)
+            for x in y[:-1]:
+                log.write(str(x))
+                log.write(' + ')
+            log.write(str(y[-1]))
+            log.write(' = ')
             log.write(y1)
             log.write('\n')
 
