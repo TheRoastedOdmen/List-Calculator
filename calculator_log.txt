@@ -1,2 +1,2 @@
 
-Addition result: 4.0 + 5.0 + 6.0 + 7.0 = 22.0
+Substraction result: 9.0 - 8.0 - 7.0 = -6.0
