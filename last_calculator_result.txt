@@ -1,4 +1,4 @@
--
+x
 
-Last Substraction result: -6.0
--
+Last Multiplication result: 69888.0
+x
