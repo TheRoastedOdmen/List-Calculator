@@ -1,0 +1,4 @@
+
+Multiplication result: 1.0 * 2.0 * 3.0 = 6.0
+
+Division result: 1.0 / 2.0 / 3.0 = 0.166666666666667

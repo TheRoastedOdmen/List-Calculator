@@ -298,7 +298,7 @@ while True:
                 t1.append(y1)
 
             u1 = 'Exponentiation result: '
-            print()
+            print('\nPrinting the results: \n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
@@ -344,7 +344,7 @@ while True:
                 t1.append(y1)
           
             u1 = 'y/x result: '
-            print()
+            print('\nPrinting the results: \n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
@@ -376,7 +376,7 @@ while True:
                     yield y2
 
             u2 ='y/x % result: '
-            print()
+            print('\nPrinting the % results: \n')
             print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3), '\n')
             for y2 in m2():
                 print(u2, y2, '\n')
@@ -422,7 +422,7 @@ while True:
                 t1.append(y1)
 
             u1 = 'x/y result: '
-            print()
+            print('\nPrinting the results: \n')
             print('^' * (len(u1) + len(max((t1), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
@@ -454,7 +454,7 @@ while True:
                     yield y2
 
             u2 ='x/y % result: '
-            print()
+            print('\nPrinting the % results: \n')
             print('%' * (len(u2) + len(max((str(float(y1)*100) for y1 in m1()), key=len)) +3), '\n')
             for y2 in m2():
                 print(u2, y2, '\n')
@@ -518,7 +518,7 @@ while True:
                     yield y1
             
             u1 = 'Factorial result: '
-            print()
+            print('\nPrinting the results: \n')
             print('!' * (len(u1) + len(max((str(fact(x)) for x in y), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
