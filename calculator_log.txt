@@ -1,2 +1,2 @@
 
-Multiplication result: 4.0 * 52.0 * 6.0 * 7.0 * 8.0 = 69888.0
+Division result: 9.0 / 3.0 / 1.0 = 3.0

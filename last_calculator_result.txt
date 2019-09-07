@@ -1,4 +1,4 @@
-x
+/
 
-Last Multiplication result: 69888.0
-x
+Last Division result: 3.0
+/
