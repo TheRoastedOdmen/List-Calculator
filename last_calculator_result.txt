@@ -1,4 +1,8 @@
-/
+!
 
-Last Division result: 3.0
-/
+Last Factorial result: 
+1
+6
+2
+
+!

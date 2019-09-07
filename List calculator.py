@@ -1,5 +1,4 @@
 from time import sleep
-from math import factorial
 from random import randint
 #import numpy
 
@@ -13,7 +12,7 @@ print('\nFirstly choose an option\n'
     'When you done inputting press enter to get the results\n'
     'Note that you can input any amount of numbers\n')
 
-log = open('calculator_log.txt', 'w')
+log = open('calculator_log.txt', 'w') ##change to 'a' with dates
 rn = 15 #rounding
 
 while True:
@@ -615,17 +614,23 @@ while True:
 
             #vaule error skipping is needed
 
+            def fact(i):
+                if i == 1:
+                    return i
+                else:
+                    return i * fact(i-1)
+                        
             def m1():
                 for x in y:
-                    y1 = factorial(x)
+                    y1 = fact(x)
                     yield y1
             
             u1 = 'Factorial result: '
             print()
-            print('!' * (len(u1) + len(max((str(factorial(x)) for x in y), key=len)) + 1), '\n')
+            print('!' * (len(u1) + len(max((str(fact(x)) for x in y), key=len)) + 1), '\n')
             for y1 in m1():
                 print(u1, y1, '\n')
-            print('!' * (len(u1) + len(max((str(factorial(x)) for x in y), key=len)) + 1))
+            print('!' * (len(u1) + len(max((str(fact(x)) for x in y), key=len)) + 1))
 
             last = open('last_calculator_result.txt', "w")
             last.write('!')

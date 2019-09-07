@@ -1,2 +1,6 @@
 
-Division result: 9.0 / 3.0 / 1.0 = 3.0
+Factorial result: 
+1
+6
+2
+
