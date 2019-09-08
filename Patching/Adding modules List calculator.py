@@ -270,7 +270,10 @@ while True:
             last.close()
 
             log.write('\n')
-            log.write(u1)
+            log.write('Average number result')
+            log.write('\nFrom list: ')
+            log.write(str(y))
+            log.write(' = ')
             log.write(y1)
             log.write('\n')
 
@@ -315,10 +318,15 @@ while True:
             last.write('\n^')
             last.close()
 
+            #for x in y:
+                #u2 = print(str(x), '^', str(v))
+
             log.write('\n')
             log.write(u1)
             log.write('\n')
             for y1 in m1():
+                #log.write(str(u2))
+                #log.write(' = ')
                 log.write(str(y1))
                 log.write('\n')
             log.write('\n')

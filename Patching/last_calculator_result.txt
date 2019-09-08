@@ -1,4 +1,8 @@
-/
+^
 
-Last Division result: 0.166666666666667
-/
+Last Exponentiation result: 
+1.0
+4.0
+9.0
+
+^
